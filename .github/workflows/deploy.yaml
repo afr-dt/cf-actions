@@ -1,0 +1,13 @@
+name: "Workflow deploy"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-cf:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Deploying to Cloudflare Pages"
+
+  
