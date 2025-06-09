@@ -8,10 +8,10 @@ jobs:
   deploy-cf:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-        
-      - name: Deploy to Cloudflare Pages
+      - run: echo "Deploying to Kubernetes Engine (GKE)"
+      - run: echo "This is a placeholder for the deployment step"
+
+      
         
 
   
