@@ -8,6 +8,10 @@ jobs:
   deploy-cf:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Deploying to Cloudflare Pages"
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Deploy to Cloudflare Pages
+        
 
   
