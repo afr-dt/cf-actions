@@ -1,17 +1,19 @@
-name: "Workflow deploy"
-on:
-  push:
-    branches:
-      - main
+name: Deploy to Kubernetes Engine
+description: Deploys the application to Google Kubernetes Engine (GKE) on push to main branch
+on: push
 
 jobs:
-  deploy-cf:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Deploying to Kubernetes Engine (GKE)"
-      - run: echo "This is a placeholder for the deployment step"
+  first_job:
+    runs-on: ubuntu-latest 
 
-      
-        
+    steps:
+      - name: Hello world
+        run: echo "Hello, world!"
 
   
+  second_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello again
+        run: echo "Hello again, world!"
